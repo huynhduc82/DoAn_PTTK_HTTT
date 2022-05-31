@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS\DoiTraBUS.cs" />
+    <Compile Include="BLL\DoiTraBLL.cs" />
     <Compile Include="DAO\DoiTraDAO.cs" />
     <Compile Include="DAO\SQLHepler.cs" />
     <Compile Include="DTO\ChiTietDoiTraDTO.cs" />
@@ -83,12 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ThuVien\ThuVien.csproj">
-      <Project>{c20afe34-bb07-4fee-93bb-69ef5b61b2c6}</Project>
-      <Name>ThuVien</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

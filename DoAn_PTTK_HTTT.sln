@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoAn_PTTK_HTTT", "DoAn_PTTK_HTTT\DoAn_PTTK_HTTT.csproj", "{18B82D5F-E4BC-449A-925D-83DCFD32083D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuVien", "ThuVien\ThuVien.csproj", "{C20AFE34-BB07-4FEE-93BB-69EF5B61B2C6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{18B82D5F-E4BC-449A-925D-83DCFD32083D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18B82D5F-E4BC-449A-925D-83DCFD32083D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18B82D5F-E4BC-449A-925D-83DCFD32083D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C20AFE34-BB07-4FEE-93BB-69EF5B61B2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C20AFE34-BB07-4FEE-93BB-69EF5B61B2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C20AFE34-BB07-4FEE-93BB-69EF5B61B2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C20AFE34-BB07-4FEE-93BB-69EF5B61B2C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

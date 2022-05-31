@@ -31,6 +31,10 @@ namespace DoAn_PTTK_HTTT
         {
             this.components = new System.ComponentModel.Container();
             this.grpThongKe = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtMaChiTietDoiTra = new System.Windows.Forms.TextBox();
+            this.txtMoTaChiTiet = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,12 +42,16 @@ namespace DoAn_PTTK_HTTT
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.grvChiTietDoiTra = new System.Windows.Forms.DataGridView();
-            this.txtMaSL = new System.Windows.Forms.TextBox();
+            this.MaCTDoiTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaDoiTra_CT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoTaChiTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMaSP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtMaSP = new System.Windows.Forms.TextBox();
+            this.txtMaDoiTra_CT = new System.Windows.Forms.TextBox();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,21 +66,12 @@ namespace DoAn_PTTK_HTTT
             this.label1 = new System.Windows.Forms.Label();
             this.btnThemMoi = new System.Windows.Forms.Button();
             this.grvDoiTra = new System.Windows.Forms.DataGridView();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtMoTaChiTiet = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.MaDoiTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaLoaiKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaCTDoiTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaDoiTra_CT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MoTaChiTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpThongKe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvChiTietDoiTra)).BeginInit();
             this.grpThongTinLop.SuspendLayout();
@@ -83,7 +82,7 @@ namespace DoAn_PTTK_HTTT
             // 
             this.grpThongKe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.grpThongKe.Controls.Add(this.label10);
-            this.grpThongKe.Controls.Add(this.textBox1);
+            this.grpThongKe.Controls.Add(this.txtMaChiTietDoiTra);
             this.grpThongKe.Controls.Add(this.txtMoTaChiTiet);
             this.grpThongKe.Controls.Add(this.label4);
             this.grpThongKe.Controls.Add(this.txtSoLuong);
@@ -93,10 +92,10 @@ namespace DoAn_PTTK_HTTT
             this.grpThongKe.Controls.Add(this.button3);
             this.grpThongKe.Controls.Add(this.button4);
             this.grpThongKe.Controls.Add(this.grvChiTietDoiTra);
-            this.grpThongKe.Controls.Add(this.txtMaSL);
+            this.grpThongKe.Controls.Add(this.txtMaSP);
             this.grpThongKe.Controls.Add(this.label8);
             this.grpThongKe.Controls.Add(this.label7);
-            this.grpThongKe.Controls.Add(this.txtMaSP);
+            this.grpThongKe.Controls.Add(this.txtMaDoiTra_CT);
             this.grpThongKe.ForeColor = System.Drawing.Color.White;
             this.grpThongKe.Location = new System.Drawing.Point(16, 370);
             this.grpThongKe.Name = "grpThongKe";
@@ -104,6 +103,43 @@ namespace DoAn_PTTK_HTTT
             this.grpThongKe.TabIndex = 28;
             this.grpThongKe.TabStop = false;
             this.grpThongKe.Text = "Thông tin chi tiết đổi trả";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 34);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(148, 27);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Mã chi tiết đổi trả";
+            // 
+            // txtMaChiTietDoiTra
+            // 
+            this.txtMaChiTietDoiTra.Location = new System.Drawing.Point(188, 31);
+            this.txtMaChiTietDoiTra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaChiTietDoiTra.Name = "txtMaChiTietDoiTra";
+            this.txtMaChiTietDoiTra.Size = new System.Drawing.Size(323, 31);
+            this.txtMaChiTietDoiTra.TabIndex = 39;
+            // 
+            // txtMoTaChiTiet
+            // 
+            this.txtMoTaChiTiet.Location = new System.Drawing.Point(188, 198);
+            this.txtMoTaChiTiet.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMoTaChiTiet.Multiline = true;
+            this.txtMoTaChiTiet.Name = "txtMoTaChiTiet";
+            this.txtMoTaChiTiet.Size = new System.Drawing.Size(323, 74);
+            this.txtMoTaChiTiet.TabIndex = 38;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 202);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 27);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Mô tả chi tiết";
             // 
             // txtSoLuong
             // 
@@ -183,14 +219,55 @@ namespace DoAn_PTTK_HTTT
             this.grvChiTietDoiTra.RowTemplate.Height = 24;
             this.grvChiTietDoiTra.Size = new System.Drawing.Size(736, 241);
             this.grvChiTietDoiTra.TabIndex = 21;
+            this.grvChiTietDoiTra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvChiTietDoiTra_CellClick);
             // 
-            // txtMaSL
+            // MaCTDoiTra
             // 
-            this.txtMaSL.Location = new System.Drawing.Point(188, 112);
-            this.txtMaSL.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaSL.Name = "txtMaSL";
-            this.txtMaSL.Size = new System.Drawing.Size(323, 31);
-            this.txtMaSL.TabIndex = 30;
+            this.MaCTDoiTra.DataPropertyName = "MaCTDoiTra";
+            this.MaCTDoiTra.HeaderText = "Mã chi tiết đổi trả";
+            this.MaCTDoiTra.MinimumWidth = 6;
+            this.MaCTDoiTra.Name = "MaCTDoiTra";
+            this.MaCTDoiTra.Width = 125;
+            // 
+            // MaDoiTra_CT
+            // 
+            this.MaDoiTra_CT.DataPropertyName = "MaDoiTra";
+            this.MaDoiTra_CT.HeaderText = "Mã đổi trả";
+            this.MaDoiTra_CT.MinimumWidth = 6;
+            this.MaDoiTra_CT.Name = "MaDoiTra_CT";
+            this.MaDoiTra_CT.Width = 125;
+            // 
+            // MaSP
+            // 
+            this.MaSP.DataPropertyName = "MaSP";
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.Width = 125;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 125;
+            // 
+            // MoTaChiTiet
+            // 
+            this.MoTaChiTiet.DataPropertyName = "MoTaChiTiet";
+            this.MoTaChiTiet.HeaderText = "Mô tả chi tiết";
+            this.MoTaChiTiet.MinimumWidth = 6;
+            this.MoTaChiTiet.Name = "MoTaChiTiet";
+            this.MoTaChiTiet.Width = 270;
+            // 
+            // txtMaSP
+            // 
+            this.txtMaSP.Location = new System.Drawing.Point(188, 112);
+            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaSP.Name = "txtMaSP";
+            this.txtMaSP.Size = new System.Drawing.Size(323, 31);
+            this.txtMaSP.TabIndex = 30;
             // 
             // label8
             // 
@@ -212,46 +289,37 @@ namespace DoAn_PTTK_HTTT
             this.label7.TabIndex = 28;
             this.label7.Text = "Mã đổi trả";
             // 
-            // txtMaSP
+            // txtMaDoiTra_CT
             // 
-            this.txtMaSP.Location = new System.Drawing.Point(188, 69);
-            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaSP.Name = "txtMaSP";
-            this.txtMaSP.Size = new System.Drawing.Size(323, 31);
-            this.txtMaSP.TabIndex = 27;
+            this.txtMaDoiTra_CT.Location = new System.Drawing.Point(188, 69);
+            this.txtMaDoiTra_CT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaDoiTra_CT.Name = "txtMaDoiTra_CT";
+            this.txtMaDoiTra_CT.Size = new System.Drawing.Size(323, 31);
+            this.txtMaDoiTra_CT.TabIndex = 27;
             // 
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnLuu.Location = new System.Drawing.Point(950, 260);
+            this.btnLuu.Location = new System.Drawing.Point(568, 260);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(203, 84);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnSua.Location = new System.Drawing.Point(690, 260);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(203, 84);
-            this.btnSua.TabIndex = 19;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnXoa.Location = new System.Drawing.Point(430, 260);
+            this.btnXoa.Location = new System.Drawing.Point(822, 260);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(203, 84);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label6
             // 
@@ -281,7 +349,6 @@ namespace DoAn_PTTK_HTTT
             this.grpThongTinLop.Controls.Add(this.label3);
             this.grpThongTinLop.Controls.Add(this.txtThoiGian);
             this.grpThongTinLop.Controls.Add(this.btnLuu);
-            this.grpThongTinLop.Controls.Add(this.btnSua);
             this.grpThongTinLop.Controls.Add(this.btnXoa);
             this.grpThongTinLop.Controls.Add(this.label6);
             this.grpThongTinLop.Controls.Add(this.txtMaNV);
@@ -372,13 +439,14 @@ namespace DoAn_PTTK_HTTT
             // btnThemMoi
             // 
             this.btnThemMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnThemMoi.Location = new System.Drawing.Point(170, 260);
+            this.btnThemMoi.Location = new System.Drawing.Point(307, 260);
             this.btnThemMoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(203, 84);
             this.btnThemMoi.TabIndex = 1;
             this.btnThemMoi.Text = "Thêm mới";
             this.btnThemMoi.UseVisualStyleBackColor = false;
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // grvDoiTra
             // 
@@ -397,47 +465,6 @@ namespace DoAn_PTTK_HTTT
             this.grvDoiTra.Size = new System.Drawing.Size(736, 220);
             this.grvDoiTra.TabIndex = 0;
             this.grvDoiTra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvDoiTra_CellClick);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // txtMoTaChiTiet
-            // 
-            this.txtMoTaChiTiet.Location = new System.Drawing.Point(188, 198);
-            this.txtMoTaChiTiet.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMoTaChiTiet.Multiline = true;
-            this.txtMoTaChiTiet.Name = "txtMoTaChiTiet";
-            this.txtMoTaChiTiet.Size = new System.Drawing.Size(323, 74);
-            this.txtMoTaChiTiet.TabIndex = 38;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 202);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 27);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Mô tả chi tiết";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 34);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 27);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "Mã chi tiết đổi trả";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(188, 31);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 31);
-            this.textBox1.TabIndex = 39;
             // 
             // MaDoiTra
             // 
@@ -479,41 +506,9 @@ namespace DoAn_PTTK_HTTT
             this.ThoiGian.Name = "ThoiGian";
             this.ThoiGian.Width = 165;
             // 
-            // MaCTDoiTra
+            // timer1
             // 
-            this.MaCTDoiTra.DataPropertyName = "MaCTDoiTra";
-            this.MaCTDoiTra.HeaderText = "Mã chi tiết đổi trả";
-            this.MaCTDoiTra.MinimumWidth = 6;
-            this.MaCTDoiTra.Name = "MaCTDoiTra";
-            // 
-            // MaDoiTra_CT
-            // 
-            this.MaDoiTra_CT.DataPropertyName = "MaDoiTra";
-            this.MaDoiTra_CT.HeaderText = "Mã đổi trả";
-            this.MaDoiTra_CT.MinimumWidth = 6;
-            this.MaDoiTra_CT.Name = "MaDoiTra_CT";
-            // 
-            // MaSP
-            // 
-            this.MaSP.DataPropertyName = "MaSP";
-            this.MaSP.HeaderText = "Mã sản phẩm";
-            this.MaSP.MinimumWidth = 6;
-            this.MaSP.Name = "MaSP";
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // MoTaChiTiet
-            // 
-            this.MoTaChiTiet.DataPropertyName = "MoTaChiTiet";
-            this.MoTaChiTiet.HeaderText = "Mô tả chi tiết";
-            this.MoTaChiTiet.MinimumWidth = 6;
-            this.MoTaChiTiet.Name = "MoTaChiTiet";
-            this.MoTaChiTiet.Width = 270;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmDoiTra
             // 
@@ -541,7 +536,6 @@ namespace DoAn_PTTK_HTTT
 
         private System.Windows.Forms.GroupBox grpThongKe;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -553,10 +547,10 @@ namespace DoAn_PTTK_HTTT
         private System.Windows.Forms.Button btnThemMoi;
         private System.Windows.Forms.DataGridView grvDoiTra;
         private System.Windows.Forms.DataGridView grvChiTietDoiTra;
-        private System.Windows.Forms.TextBox txtMaSL;
+        private System.Windows.Forms.TextBox txtMaSP;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.TextBox txtMaDoiTra_CT;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaLoaiKH;
         private System.Windows.Forms.Label label3;
@@ -569,7 +563,7 @@ namespace DoAn_PTTK_HTTT
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaChiTietDoiTra;
         private System.Windows.Forms.TextBox txtMoTaChiTiet;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDoiTra;

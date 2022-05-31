@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DoAn_PTTK_HTTT.BUS;
+using DoAn_PTTK_HTTT.BLL;
+using DoAn_PTTK_HTTT.DTO;
 
 namespace DoAn_PTTK_HTTT
 {
     public partial class frmDoiTra : Form
     {
-        DoiTraBUS dt = new DoiTraBUS();
+        DoiTraBLL dt = new DoiTraBLL();
         public frmDoiTra()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace DoAn_PTTK_HTTT
             grvDoiTra.ColumnHeadersDefaultCellStyle.ForeColor = Color.Green;
             grvDoiTra.ColumnHeadersDefaultCellStyle.BackColor = Color.WhiteSmoke;
             grvDoiTra.ForeColor = Color.Green;
+
         }
         public void styleGridViewCTDoiTra()
         {
@@ -75,7 +77,34 @@ namespace DoAn_PTTK_HTTT
             txtMaNV.Text = grvDoiTra.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtMaKH.Text = grvDoiTra.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtMaLoaiKH.Text = grvDoiTra.Rows[e.RowIndex].Cells[3].Value.ToString();
-            btnSua.Enabled = btnXoa.Enabled = true;
+        }
+
+        private void grvChiTietDoiTra_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaChiTietDoiTra.Text = grvChiTietDoiTra.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtMaDoiTra_CT.Text = grvChiTietDoiTra.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtMaSP.Text = grvChiTietDoiTra.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtSoLuong.Text = grvChiTietDoiTra.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtMoTaChiTiet.Text = grvChiTietDoiTra.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            txtMaDoiTra.Clear();
+            txtMaNV.Clear();
+            txtMaKH.Clear();
+            txtMaLoaiKH.Clear();
+            txtMaDoiTra.Focus();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
