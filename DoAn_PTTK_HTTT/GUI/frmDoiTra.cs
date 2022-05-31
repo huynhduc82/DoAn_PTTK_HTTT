@@ -234,5 +234,10 @@ namespace DoAn_PTTK_HTTT
                 MessageBox.Show("Bị lỗi hãy thử lại");
             }
         }
+
+        private void frmDoiTra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

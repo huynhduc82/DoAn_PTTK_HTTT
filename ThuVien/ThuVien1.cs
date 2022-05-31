@@ -53,7 +53,7 @@ namespace ThuVien
         }
         public ThuVien1()
         {
-            strServerName = @"DESKTOP-RCCOOEU\SDB1"; //Tên máy server của mình (tên máy của SV)
+            strServerName = @"LAPTOP-QC6HGMRG\CLIENT1"; //Tên máy server của mình (tên máy của SV)
             //strServerName = @"DESKTOP-AUFE1Q8\SQLEXPRESS";
             strDBName = "ShopQuanAo";
             //Dùng với quyền của của Windows

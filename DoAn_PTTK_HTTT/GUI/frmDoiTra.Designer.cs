@@ -110,7 +110,7 @@ namespace DoAn_PTTK_HTTT
             this.label10.Location = new System.Drawing.Point(20, 34);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 27);
+            this.label10.Size = new System.Drawing.Size(158, 20);
             this.label10.TabIndex = 40;
             this.label10.Text = "Mã chi tiết đổi trả";
             // 
@@ -119,7 +119,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaChiTietDoiTra.Location = new System.Drawing.Point(188, 31);
             this.txtMaChiTietDoiTra.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaChiTietDoiTra.Name = "txtMaChiTietDoiTra";
-            this.txtMaChiTietDoiTra.Size = new System.Drawing.Size(323, 31);
+            this.txtMaChiTietDoiTra.Size = new System.Drawing.Size(323, 27);
             this.txtMaChiTietDoiTra.TabIndex = 39;
             // 
             // txtMoTaChiTiet
@@ -137,7 +137,7 @@ namespace DoAn_PTTK_HTTT
             this.label4.Location = new System.Drawing.Point(20, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 27);
+            this.label4.Size = new System.Drawing.Size(120, 20);
             this.label4.TabIndex = 37;
             this.label4.Text = "Mô tả chi tiết";
             // 
@@ -146,7 +146,7 @@ namespace DoAn_PTTK_HTTT
             this.txtSoLuong.Location = new System.Drawing.Point(188, 156);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(323, 31);
+            this.txtSoLuong.Size = new System.Drawing.Size(323, 27);
             this.txtSoLuong.TabIndex = 36;
             // 
             // label9
@@ -155,7 +155,7 @@ namespace DoAn_PTTK_HTTT
             this.label9.Location = new System.Drawing.Point(20, 160);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 27);
+            this.label9.Size = new System.Drawing.Size(82, 20);
             this.label9.TabIndex = 35;
             this.label9.Text = "Số lượng";
             // 
@@ -270,7 +270,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaSP.Location = new System.Drawing.Point(188, 112);
             this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaSP.Name = "txtMaSP";
-            this.txtMaSP.Size = new System.Drawing.Size(323, 31);
+            this.txtMaSP.Size = new System.Drawing.Size(323, 27);
             this.txtMaSP.TabIndex = 30;
             // 
             // label8
@@ -279,7 +279,7 @@ namespace DoAn_PTTK_HTTT
             this.label8.Location = new System.Drawing.Point(20, 116);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 27);
+            this.label8.Size = new System.Drawing.Size(121, 20);
             this.label8.TabIndex = 29;
             this.label8.Text = "Mã sản phẩm";
             // 
@@ -289,7 +289,7 @@ namespace DoAn_PTTK_HTTT
             this.label7.Location = new System.Drawing.Point(20, 72);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 27);
+            this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 28;
             this.label7.Text = "Mã đổi trả";
             // 
@@ -298,7 +298,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaDoiTra_CT.Location = new System.Drawing.Point(188, 69);
             this.txtMaDoiTra_CT.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDoiTra_CT.Name = "txtMaDoiTra_CT";
-            this.txtMaDoiTra_CT.Size = new System.Drawing.Size(323, 31);
+            this.txtMaDoiTra_CT.Size = new System.Drawing.Size(323, 27);
             this.txtMaDoiTra_CT.TabIndex = 27;
             // 
             // btnLuu_DoiTra
@@ -331,7 +331,7 @@ namespace DoAn_PTTK_HTTT
             this.label6.Location = new System.Drawing.Point(20, 123);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 27);
+            this.label6.Size = new System.Drawing.Size(135, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Mã khách hàng";
             // 
@@ -341,7 +341,7 @@ namespace DoAn_PTTK_HTTT
             this.label5.Location = new System.Drawing.Point(20, 76);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 27);
+            this.label5.Size = new System.Drawing.Size(120, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Mã nhân viên";
             // 
@@ -376,7 +376,7 @@ namespace DoAn_PTTK_HTTT
             this.label2.Location = new System.Drawing.Point(20, 217);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 27);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 24;
             this.label2.Text = "Thời gian";
             // 
@@ -385,7 +385,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaLoaiKH.Location = new System.Drawing.Point(188, 166);
             this.txtMaLoaiKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLoaiKH.Name = "txtMaLoaiKH";
-            this.txtMaLoaiKH.Size = new System.Drawing.Size(323, 31);
+            this.txtMaLoaiKH.Size = new System.Drawing.Size(323, 27);
             this.txtMaLoaiKH.TabIndex = 23;
             // 
             // label3
@@ -394,7 +394,7 @@ namespace DoAn_PTTK_HTTT
             this.label3.Location = new System.Drawing.Point(20, 170);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 27);
+            this.label3.Size = new System.Drawing.Size(102, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Mã loại KH";
             // 
@@ -403,7 +403,7 @@ namespace DoAn_PTTK_HTTT
             this.txtThoiGian.Location = new System.Drawing.Point(188, 214);
             this.txtThoiGian.Margin = new System.Windows.Forms.Padding(4);
             this.txtThoiGian.Name = "txtThoiGian";
-            this.txtThoiGian.Size = new System.Drawing.Size(323, 31);
+            this.txtThoiGian.Size = new System.Drawing.Size(323, 27);
             this.txtThoiGian.TabIndex = 21;
             // 
             // txtMaNV
@@ -411,7 +411,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaNV.Location = new System.Drawing.Point(188, 72);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(323, 31);
+            this.txtMaNV.Size = new System.Drawing.Size(323, 27);
             this.txtMaNV.TabIndex = 11;
             // 
             // txtMaKH
@@ -419,7 +419,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaKH.Location = new System.Drawing.Point(188, 120);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(323, 31);
+            this.txtMaKH.Size = new System.Drawing.Size(323, 27);
             this.txtMaKH.TabIndex = 7;
             // 
             // txtMaDoiTra
@@ -427,7 +427,7 @@ namespace DoAn_PTTK_HTTT
             this.txtMaDoiTra.Location = new System.Drawing.Point(188, 25);
             this.txtMaDoiTra.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDoiTra.Name = "txtMaDoiTra";
-            this.txtMaDoiTra.Size = new System.Drawing.Size(323, 31);
+            this.txtMaDoiTra.Size = new System.Drawing.Size(323, 27);
             this.txtMaDoiTra.TabIndex = 3;
             // 
             // label1
@@ -436,7 +436,7 @@ namespace DoAn_PTTK_HTTT
             this.label1.Location = new System.Drawing.Point(20, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 27);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã đổi trả";
             // 
@@ -522,16 +522,17 @@ namespace DoAn_PTTK_HTTT
             // 
             // frmDoiTra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1344, 783);
             this.Controls.Add(this.grpThongKe);
             this.Controls.Add(this.grpThongTinLop);
-            this.Font = new System.Drawing.Font("Vollkorn SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmDoiTra";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmDoiTra_Load);
             this.grpThongKe.ResumeLayout(false);
             this.grpThongKe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvChiTietDoiTra)).EndInit();
