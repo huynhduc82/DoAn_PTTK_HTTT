@@ -106,5 +106,10 @@ namespace DoAn_PTTK_HTTT
         {
 
         }
+
+        private void frmDoiTra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

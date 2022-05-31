@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAn_PTTK_HTTT.GUI; 
 
 namespace DoAn_PTTK_HTTT
 {
@@ -16,7 +17,7 @@ namespace DoAn_PTTK_HTTT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDoiTra());
+            Application.Run(new DoanhThu());
         }
     }
 }
