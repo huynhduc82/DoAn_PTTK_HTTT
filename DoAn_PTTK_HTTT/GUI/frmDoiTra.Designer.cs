@@ -37,10 +37,10 @@ namespace DoAn_PTTK_HTTT
             this.label4 = new System.Windows.Forms.Label();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLuu_CT = new System.Windows.Forms.Button();
+            this.btnSua_CT = new System.Windows.Forms.Button();
+            this.btnXoa_CT = new System.Windows.Forms.Button();
+            this.btnThemMoi_CT = new System.Windows.Forms.Button();
             this.grvChiTietDoiTra = new System.Windows.Forms.DataGridView();
             this.MaCTDoiTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaDoiTra_CT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,8 +51,8 @@ namespace DoAn_PTTK_HTTT
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtMaDoiTra_CT = new System.Windows.Forms.TextBox();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu_DoiTra = new System.Windows.Forms.Button();
+            this.btnXoa_DoiTra = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.grpThongTinLop = new System.Windows.Forms.GroupBox();
@@ -87,10 +87,10 @@ namespace DoAn_PTTK_HTTT
             this.grpThongKe.Controls.Add(this.label4);
             this.grpThongKe.Controls.Add(this.txtSoLuong);
             this.grpThongKe.Controls.Add(this.label9);
-            this.grpThongKe.Controls.Add(this.button1);
-            this.grpThongKe.Controls.Add(this.button2);
-            this.grpThongKe.Controls.Add(this.button3);
-            this.grpThongKe.Controls.Add(this.button4);
+            this.grpThongKe.Controls.Add(this.btnLuu_CT);
+            this.grpThongKe.Controls.Add(this.btnSua_CT);
+            this.grpThongKe.Controls.Add(this.btnXoa_CT);
+            this.grpThongKe.Controls.Add(this.btnThemMoi_CT);
             this.grpThongKe.Controls.Add(this.grvChiTietDoiTra);
             this.grpThongKe.Controls.Add(this.txtMaSP);
             this.grpThongKe.Controls.Add(this.label8);
@@ -159,49 +159,53 @@ namespace DoAn_PTTK_HTTT
             this.label9.TabIndex = 35;
             this.label9.Text = "Số lượng";
             // 
-            // button1
+            // btnLuu_CT
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button1.Location = new System.Drawing.Point(950, 309);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 84);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLuu_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnLuu_CT.Location = new System.Drawing.Point(950, 309);
+            this.btnLuu_CT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLuu_CT.Name = "btnLuu_CT";
+            this.btnLuu_CT.Size = new System.Drawing.Size(203, 84);
+            this.btnLuu_CT.TabIndex = 34;
+            this.btnLuu_CT.Text = "Lưu";
+            this.btnLuu_CT.UseVisualStyleBackColor = false;
+            this.btnLuu_CT.Click += new System.EventHandler(this.btnLuu_CT_Click);
             // 
-            // button2
+            // btnSua_CT
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button2.Location = new System.Drawing.Point(690, 309);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 84);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSua_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnSua_CT.Location = new System.Drawing.Point(690, 309);
+            this.btnSua_CT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSua_CT.Name = "btnSua_CT";
+            this.btnSua_CT.Size = new System.Drawing.Size(203, 84);
+            this.btnSua_CT.TabIndex = 33;
+            this.btnSua_CT.Text = "Sửa";
+            this.btnSua_CT.UseVisualStyleBackColor = false;
+            this.btnSua_CT.Click += new System.EventHandler(this.btnSua_CT_Click);
             // 
-            // button3
+            // btnXoa_CT
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button3.Location = new System.Drawing.Point(430, 309);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 84);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Xoá";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnXoa_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnXoa_CT.Location = new System.Drawing.Point(430, 309);
+            this.btnXoa_CT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXoa_CT.Name = "btnXoa_CT";
+            this.btnXoa_CT.Size = new System.Drawing.Size(203, 84);
+            this.btnXoa_CT.TabIndex = 32;
+            this.btnXoa_CT.Text = "Xoá";
+            this.btnXoa_CT.UseVisualStyleBackColor = false;
+            this.btnXoa_CT.Click += new System.EventHandler(this.btnXoa_CT_Click);
             // 
-            // button4
+            // btnThemMoi_CT
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button4.Location = new System.Drawing.Point(170, 309);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(203, 84);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "Thêm mới";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnThemMoi_CT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnThemMoi_CT.Location = new System.Drawing.Point(170, 309);
+            this.btnThemMoi_CT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnThemMoi_CT.Name = "btnThemMoi_CT";
+            this.btnThemMoi_CT.Size = new System.Drawing.Size(203, 84);
+            this.btnThemMoi_CT.TabIndex = 31;
+            this.btnThemMoi_CT.Text = "Thêm mới";
+            this.btnThemMoi_CT.UseVisualStyleBackColor = false;
+            this.btnThemMoi_CT.Click += new System.EventHandler(this.btnThemMoi_CT_Click);
             // 
             // grvChiTietDoiTra
             // 
@@ -259,7 +263,7 @@ namespace DoAn_PTTK_HTTT
             this.MoTaChiTiet.HeaderText = "Mô tả chi tiết";
             this.MoTaChiTiet.MinimumWidth = 6;
             this.MoTaChiTiet.Name = "MoTaChiTiet";
-            this.MoTaChiTiet.Width = 270;
+            this.MoTaChiTiet.Width = 180;
             // 
             // txtMaSP
             // 
@@ -297,29 +301,29 @@ namespace DoAn_PTTK_HTTT
             this.txtMaDoiTra_CT.Size = new System.Drawing.Size(323, 31);
             this.txtMaDoiTra_CT.TabIndex = 27;
             // 
-            // btnLuu
+            // btnLuu_DoiTra
             // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnLuu.Location = new System.Drawing.Point(568, 260);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(203, 84);
-            this.btnLuu.TabIndex = 20;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            this.btnLuu_DoiTra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnLuu_DoiTra.Location = new System.Drawing.Point(568, 260);
+            this.btnLuu_DoiTra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLuu_DoiTra.Name = "btnLuu_DoiTra";
+            this.btnLuu_DoiTra.Size = new System.Drawing.Size(203, 84);
+            this.btnLuu_DoiTra.TabIndex = 20;
+            this.btnLuu_DoiTra.Text = "Lưu";
+            this.btnLuu_DoiTra.UseVisualStyleBackColor = false;
+            this.btnLuu_DoiTra.Click += new System.EventHandler(this.btnLuu_DoiTra_Click);
             // 
-            // btnXoa
+            // btnXoa_DoiTra
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnXoa.Location = new System.Drawing.Point(822, 260);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(203, 84);
-            this.btnXoa.TabIndex = 18;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoa_DoiTra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnXoa_DoiTra.Location = new System.Drawing.Point(822, 260);
+            this.btnXoa_DoiTra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXoa_DoiTra.Name = "btnXoa_DoiTra";
+            this.btnXoa_DoiTra.Size = new System.Drawing.Size(203, 84);
+            this.btnXoa_DoiTra.TabIndex = 18;
+            this.btnXoa_DoiTra.Text = "Xoá";
+            this.btnXoa_DoiTra.UseVisualStyleBackColor = false;
+            this.btnXoa_DoiTra.Click += new System.EventHandler(this.btnXoa_DoiTra_Click);
             // 
             // label6
             // 
@@ -348,8 +352,8 @@ namespace DoAn_PTTK_HTTT
             this.grpThongTinLop.Controls.Add(this.txtMaLoaiKH);
             this.grpThongTinLop.Controls.Add(this.label3);
             this.grpThongTinLop.Controls.Add(this.txtThoiGian);
-            this.grpThongTinLop.Controls.Add(this.btnLuu);
-            this.grpThongTinLop.Controls.Add(this.btnXoa);
+            this.grpThongTinLop.Controls.Add(this.btnLuu_DoiTra);
+            this.grpThongTinLop.Controls.Add(this.btnXoa_DoiTra);
             this.grpThongTinLop.Controls.Add(this.label6);
             this.grpThongTinLop.Controls.Add(this.txtMaNV);
             this.grpThongTinLop.Controls.Add(this.label5);
@@ -460,6 +464,7 @@ namespace DoAn_PTTK_HTTT
             this.grvDoiTra.Location = new System.Drawing.Point(543, 25);
             this.grvDoiTra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grvDoiTra.Name = "grvDoiTra";
+            this.grvDoiTra.ReadOnly = true;
             this.grvDoiTra.RowHeadersWidth = 51;
             this.grvDoiTra.RowTemplate.Height = 24;
             this.grvDoiTra.Size = new System.Drawing.Size(736, 220);
@@ -472,6 +477,7 @@ namespace DoAn_PTTK_HTTT
             this.MaDoiTra.HeaderText = "Mã đổi trả";
             this.MaDoiTra.MinimumWidth = 6;
             this.MaDoiTra.Name = "MaDoiTra";
+            this.MaDoiTra.ReadOnly = true;
             this.MaDoiTra.Width = 125;
             // 
             // MaNV
@@ -480,6 +486,7 @@ namespace DoAn_PTTK_HTTT
             this.MaNV.HeaderText = "Mã nhân viên";
             this.MaNV.MinimumWidth = 6;
             this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
             this.MaNV.Width = 125;
             // 
             // MaKH
@@ -488,6 +495,7 @@ namespace DoAn_PTTK_HTTT
             this.MaKH.HeaderText = "Mã khách hàng";
             this.MaKH.MinimumWidth = 6;
             this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
             this.MaKH.Width = 125;
             // 
             // MaLoaiKH
@@ -496,6 +504,7 @@ namespace DoAn_PTTK_HTTT
             this.MaLoaiKH.HeaderText = "Mã loại khách hàng";
             this.MaLoaiKH.MinimumWidth = 6;
             this.MaLoaiKH.Name = "MaLoaiKH";
+            this.MaLoaiKH.ReadOnly = true;
             this.MaLoaiKH.Width = 125;
             // 
             // ThoiGian
@@ -504,6 +513,7 @@ namespace DoAn_PTTK_HTTT
             this.ThoiGian.HeaderText = "Thời gian";
             this.ThoiGian.MinimumWidth = 6;
             this.ThoiGian.Name = "ThoiGian";
+            this.ThoiGian.ReadOnly = true;
             this.ThoiGian.Width = 165;
             // 
             // timer1
@@ -535,8 +545,8 @@ namespace DoAn_PTTK_HTTT
         #endregion
 
         private System.Windows.Forms.GroupBox grpThongKe;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLuu_DoiTra;
+        private System.Windows.Forms.Button btnXoa_DoiTra;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox grpThongTinLop;
@@ -558,10 +568,10 @@ namespace DoAn_PTTK_HTTT
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLuu_CT;
+        private System.Windows.Forms.Button btnSua_CT;
+        private System.Windows.Forms.Button btnXoa_CT;
+        private System.Windows.Forms.Button btnThemMoi_CT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtMaChiTietDoiTra;
         private System.Windows.Forms.TextBox txtMoTaChiTiet;

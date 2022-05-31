@@ -20,31 +20,25 @@ namespace DoAn_PTTK_HTTT.BLL
             return flag;
         }
 
-        public int XoaDoiTra(DoiTraDTO dt)
+        public int XoaDoiTra(string maDT)
         {
-
-            return 2;
+            int flag = doiTra.XoaDoiTra(maDT);
+            return flag;
         }
-
-        public int SuaDoiTra(DoiTraDTO dt)
+        public int ThemChiTietDoiTra(ChiTietDoiTraDTO dt)
         {
-
-            return 2;
+            int flag = doiTra.ThemChiTietDoiTra(dt);
+            return flag;
         }
-        public int ThemChiTietDoiTra(DoiTraDTO dt)
+        public int XoaChiTietDoiTra(string maCTDT)
         {
-
-            return 2;
+            int flag = doiTra.XoaChiTietDoiTra(maCTDT);
+            return flag;
         }
-        public int XoaChiTietDoiTra(DoiTraDTO dt)
+        public int SuaChiTietDoiTra(ChiTietDoiTraDTO dt)
         {
-
-            return 2;
-        }
-        public int SuaChiTietDoiTra(DoiTraDTO dt)
-        {
-
-            return 2;
+            int flag = doiTra.SuaChiTietDoiTra(dt);
+            return flag;
         }
         public List<ChiTietDoiTraDTO> LayChiTietDoiTra()
         {
