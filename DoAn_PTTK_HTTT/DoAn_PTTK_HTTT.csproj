@@ -60,6 +60,7 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DAO\ChiTietDoiTraDAO.cs" />
     <Compile Include="DAO\DoiTraDAO.cs" />
     <Compile Include="DAO\SQLHepler.cs" />
     <Compile Include="DataSet1.Designer.cs">

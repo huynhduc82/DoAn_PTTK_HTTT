@@ -17,7 +17,7 @@ namespace DoAn_PTTK_HTTT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DoanhThu());
+            Application.Run(new frmDoiTra());
         }
     }
 }

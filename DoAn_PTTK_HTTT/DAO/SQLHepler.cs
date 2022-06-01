@@ -52,7 +52,7 @@ namespace DoAn_PTTK_HTTT.DAO
         }
         public SQLHepler()
         {
-            strServerName = @"LAPTOP-QC6HGMRG\CLIENT1"; //Tên máy server của mình (tên máy của SV)
+            strServerName = @"DESKTOP-RCCOOEU\SDB1"; //Tên máy server của mình (tên máy của SV)
             //strServerName = @"DESKTOP-AUFE1Q8\SQLEXPRESS";
             strDBName = "ShopQuanAo";
             //Dùng với quyền của của Windows

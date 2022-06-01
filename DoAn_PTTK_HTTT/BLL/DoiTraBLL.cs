@@ -14,6 +14,7 @@ namespace DoAn_PTTK_HTTT.BLL
     {
         SQLHepler sql = new SQLHepler();
         DoiTraDAO doiTra = new DoiTraDAO();
+        ChiTietDoiTraDAO ctDoiTra = new ChiTietDoiTraDAO();
         public int ThemDoiTra(DoiTraDTO dt)
         {
             int flag = doiTra.ThemDoiTraMoi(dt);
@@ -27,22 +28,22 @@ namespace DoAn_PTTK_HTTT.BLL
         }
         public int ThemChiTietDoiTra(ChiTietDoiTraDTO dt)
         {
-            int flag = doiTra.ThemChiTietDoiTra(dt);
+            int flag = ctDoiTra.ThemChiTietDoiTra(dt);
             return flag;
         }
         public int XoaChiTietDoiTra(string maCTDT)
         {
-            int flag = doiTra.XoaChiTietDoiTra(maCTDT);
+            int flag = ctDoiTra.XoaChiTietDoiTra(maCTDT);
             return flag;
         }
         public int SuaChiTietDoiTra(ChiTietDoiTraDTO dt)
         {
-            int flag = doiTra.SuaChiTietDoiTra(dt);
+            int flag = ctDoiTra.SuaChiTietDoiTra(dt);
             return flag;
         }
         public List<ChiTietDoiTraDTO> LayChiTietDoiTra()
         {
-            return doiTra.LayChiTietDoiTra();
+            return ctDoiTra.LayChiTietDoiTra();
         }
         public List<DoiTraDTO> LayDoiTra()
         {
